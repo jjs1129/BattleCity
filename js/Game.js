@@ -7,6 +7,8 @@ import Enemy from './Enemy.js';
 import Direction from './Direction.js';
 import BlockType from './BlockType.js';
 import Status from './Status.js';
+import EnemyFast from './EnemyFast.js';
+import EnemyHeavy from './EnemyHeavy.js';
 
 export default class Game {
   constructor(context, tankNum) {
@@ -75,7 +77,17 @@ export default class Game {
       let xx = parseInt(Math.random() * 24) * size;
       let yy = parseInt(Math.random() * 11) * size;
       if (this.temp[xx / size][yy / size] == 0) {
-        let tk = new Enemy(xx, yy);
+        let per=Math.random();
+        let tk;
+        if(per<=0.5){
+          tk = new Enemy(xx, yy);
+        }
+        else if(per<=0.75){
+          tk = new EnemyFast(xx,yy);
+        }
+        else{
+          tk = new EnemyHeavy(xx,yy);
+        }
         this.enemyTankArr.push(tk);
         this.temp[xx / size][yy / size] = 1;
       }

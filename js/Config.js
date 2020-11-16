@@ -14,6 +14,8 @@ const Config = {
   wallLife: 10,
   playerLife: 10,
   enemyLife: 10,
+  enemy1Life:15,
+  enemy2Life:5,
   playerAssets: {
     up: '/assets/tank-up.png',
     right: '/assets/tank-right.png',
@@ -26,8 +28,22 @@ const Config = {
     down: '/assets/enemy-down.png',
     left: '/assets/enemy-left.png',
   },
+  enemy1Assets: {
+    up: '/assets/enemy1-up.png',
+    right: '/assets/enemy1-right.png',
+    down: '/assets/enemy1-down.png',
+    left: '/assets/enemy1-left.png',
+  },
+  enemy2Assets: {
+    up: '/assets/enemy2-up.png',
+    right: '/assets/enemy2-right.png',
+    down: '/assets/enemy2-down.png',
+    left: '/assets/enemy2-left.png',
+  },
   playerMoveSpeed: 200, // 移动速度
   enemyMoveSpeed: 150,
+  enemy1MoveSpeed:200,
+  enemy2MoveSpeed:100,
   rocketMoveSpeed: 300,
   gameUpdateTick: 50,// 游戏画面刷新的间隔
   

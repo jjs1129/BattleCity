@@ -208,19 +208,19 @@ export default class Game {
       if (this.controlKeys.length != 0) {
         let first = this.controlKeys[0];
         switch (first) {
-          case 87:
+          case 38:
             this.player.direction = Direction.up;
             this.player.image.src = Config.playerAssets.up;
             break;
-          case 68:
+          case 39:
             this.player.direction = Direction.right;
             this.player.image.src = Config.playerAssets.right;
             break;
-          case 83:
+          case 40:
             this.player.direction = Direction.down;
             this.player.image.src = Config.playerAssets.down;
             break;
-          case 65:
+          case 37:
             this.player.direction = Direction.left;
             this.player.image.src = Config.playerAssets.left;
             break;
@@ -293,7 +293,7 @@ export default class Game {
 
   keyLisetner() {
     document.addEventListener('keydown', (e) => {
-      if ([87, 65, 83, 68].indexOf(e.keyCode) != -1) {
+      if ([38, 37, 40, 39].indexOf(e.keyCode) != -1) {
         if (this.controlKeys.indexOf(e.keyCode) == -1) {
           this.controlKeys.unshift(e.keyCode);
         }

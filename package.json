@@ -1,0 +1,35 @@
+{
+  "name": "tankv1.01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\\",
+  "scripts": {
+    "build": "webpack --env production",
+    "serve": "webpack-dev-server -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjs1129/BattleCity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjs1129/BattleCity/issues"
+  },
+  "homepage": "https://github.com/jjs1129/BattleCity#readme",
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^6.1.1",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "source-map-loader": "^1.1.2",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
